@@ -132,7 +132,9 @@ textarea:focus{    border: 1px solid rgb(73, 98, 151);    outline: none;}
 }
 .options-list::-webkit-scrollbar {width: 3px; }
 .options-list::-webkit-scrollbar-thumb {background-color: rgba(255, 255, 255, 0.5);border-radius: 10px;}
-.options-list::-webkit-scrollbar-thumb:hover {background-color: rgba(255, 255, 255, 0.7);}
+.options-list::-webkit-scrollbar-thumb:hover {background-color: rgba(255, 255, 255, 0.7);
+}
+
 .options-list::-webkit-scrollbar-track {
     background-color: transparent; /* Track color */
     border-radius: 10px;
@@ -283,10 +285,4 @@ input[type="range"]::-moz-range-thumb {
     .main::before{
         box-shadow: 0px 0px 130px 0px rgba(0, 0, 0, 0.5) inset;
     }
-}
-@media only screen and (min-width:1200px){
-    html{        font-size: 16px;    }
-}
-@media only screen and (min-width:1400px){
-    html{        font-size: 17px;    }
 }
