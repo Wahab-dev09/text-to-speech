@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Text to Speech App</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="frame">
+            <h1>
+                <span class="h-type" id="h-type"></span>
+                <span class="h-fade-in">Speech App</span>
+              </h1>
+            <div class="speech-box">
+                <div class="layout">
+                <textarea id="textInput" placeholder="Enter text to be spoken"></textarea>
+                <div id="controls" class="controls">
+                    <div class="select-voice">
+                        <div class="dropdown-container">
+                            <div class="selected-option" id="selectedOption">Select Voice</div>
+                            <div class="options-list" id="optionsList"></div>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <label for="rate">Rate:</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
+                            <span id="rateValue">1</span>
+                        </div>
+                    </div>
+                    <div class="pitch">
+                        <label for="pitch">Pitch:</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="pitch" min="0" max="2" value="1" step="0.1">
+                            <span id="pitchValue">1</span>
+                        </div>
+                    </div>
+                    <div class="control-btns">
+                        <button id="speakButton">Speak</button>
+                        <button id="pauseButton">Pause</button>
+                        <button id="resumeButton">Resume</button>
+                        <button id="stopButton">Stop</button>
+                    </div>
+                </div>
+            </div>
+                <div class="text-generator">
+                    <p id="randomTextDisplay">Click "Generate Text" to get a sample text.</p>
+                    <div class="gen-btns">
+                        <button id="generateTextBtn">Generate Text</button>
+                        <button id="copyTextBtn">Copy Text</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
