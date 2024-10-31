@@ -48,10 +48,10 @@ h1{
     color: white;
     font-size: 2.15rem;
     padding: 20px 0px;
-    display: flex;    gap: 7px;  
+    display: flex;    gap: 2px;  
     justify-content: center;
 }
-.h-type{width: 98px;  text-align: left;}
+.h-type{width: 103px;  text-align: left;}
 .h-fade-in {    opacity: 0; /* Start hidden */  }
 .h-fade-in.show {    animation: fadeIn 1.5s forwards;  }
 
@@ -275,7 +275,7 @@ input[type="range"]::-moz-range-thumb {
     #randomTextDisplay { height: 80px; }
 }
 @media only screen and (min-width:600px){
-    .h-type{width: 115px;}
+    .h-type{width: 120px;}
     h1{font-size: 2.6rem;margin-bottom: 25px;}
     .frame{padding: 0px 20px;}
     .speech-box{flex-direction: row;align-items: flex-start;}
